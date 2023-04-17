@@ -2,6 +2,10 @@
 /system
 !/system/.gitkeep
 /webui
+/outputs/**
+!/outputs/.gitkeep
+/images/**
+!/images/.gitkeep
 
 ### Linux template
 *~
