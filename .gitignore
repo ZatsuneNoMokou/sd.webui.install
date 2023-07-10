@@ -1,6 +1,8 @@
 /*.zip
 /system
 !/system/.gitkeep
+/system-linux
+!/system-linux/.gitkeep
 /webui
 /outputs/**
 !/outputs/.gitkeep

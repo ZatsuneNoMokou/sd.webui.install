@@ -16,7 +16,12 @@ set PATH=C:\Windows\system32;C:\Windows;%GIT_PATH%;%python_path%;%python_path%\S
 set PY_LIBS=%python_path%\Scripts\Lib\site-packages
 set TRANSFORMERS_CACHE=%DIR%\transformers-cache
 set VENV_DIR=%DIR%\venv
-set COMMANDLINE_ARGS=--xformers --medvram
+
+rem https://github.com/lshqqytiger/stable-diffusion-webui-directml/issues/38
+set COMMANDLINE_ARGS=--precision full --medvram --no-half --no-half-vae --opt-sub-quad-attention --disable-nan-check
+# nvidia 
+# set COMMANDLINE_ARGS=--xformers --medvram
+set SAFETENSORS_FAST_GPU=1
 
 
 cd %~dp0webui
