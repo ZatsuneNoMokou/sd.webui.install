@@ -18,7 +18,7 @@ set TRANSFORMERS_CACHE=%DIR%\transformers-cache
 set VENV_DIR=%DIR%\venv
 
 
-rem set COMMANDLINE_ARGS=--xformers --medvram
+set COMMANDLINE_ARGS=--xformers --medvram
 set SAFETENSORS_FAST_GPU=1
 
 
