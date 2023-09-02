@@ -17,7 +17,6 @@ export venv_dir="$DIR/venv"
 
 # https://github.com/lshqqytiger/stable-diffusion-webui-directml/issues/38
 export COMMANDLINE_ARGS="--backend directml --medvram --no-half --no-half-vae --opt-sub-quad-attention --disable-nan-check"
-#export COMMANDLINE_ARGS="--backend directml --precision full --medvram --no-half --no-half-vae --opt-sub-quad-attention --disable-nan-check"
 export SAFETENSORS_FAST_GPU=1
 
 
