@@ -22,5 +22,15 @@ set COMMANDLINE_ARGS=--xformers --medvram
 set SAFETENSORS_FAST_GPU=1
 
 
+if not exist "%~dp0webui" (
+    cd %~dp0
+    git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git webui
+    cd webui
+    git submodule init
+    git submodule update
+    cd ..
+)
+
+
 cd %~dp0webui
 call webui.bat

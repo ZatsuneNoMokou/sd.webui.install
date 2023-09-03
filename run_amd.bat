@@ -22,5 +22,16 @@ set COMMANDLINE_ARGS=--medvram  --no-half --no-half-vae --opt-sub-quad-attention
 set SAFETENSORS_FAST_GPU=1
 
 
+if not exist "%~dp0webui" (
+    cd %~dp0
+    rem See https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs
+    git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml webui
+    cd webui
+    git submodule init
+    git submodule update
+    cd ..
+)
+
+
 cd %~dp0webui
 call webui.bat
