@@ -16,7 +16,7 @@ export TRANSFORMERS_CACHE="$DIR/transformers-cache"
 export venv_dir="$DIR/venv"
 
 # https://github.com/lshqqytiger/stable-diffusion-webui-directml/issues/38
-export COMMANDLINE_ARGS="--xformers --medvram"
+export COMMANDLINE_ARGS="--listen --xformers --lowvram --no-half"
 export SAFETENSORS_FAST_GPU=1
 
 
